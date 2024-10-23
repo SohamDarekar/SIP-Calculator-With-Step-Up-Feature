@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="container bg-white p-8 rounded-lg shadow-md w-96">
+        <h1 class="text-2xl font-bold text-center mb-6">SIP Calculator</h1>
+        <form id="sipForm" class="space-y-4">
+            <div>
+                <label for="monthlyInvestment" class="block text-gray-700">Monthly Investment (₹):</label>
+                <input type="number" id="monthlyInvestment" placeholder="Enter amount"
+                    class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+            <div>
+                <label for="annualRate" class="block text-gray-700">Annual Interest Rate (%):</label>
+                <input type="number" id="annualRate" step="0.01" placeholder="Enter rate"
+                    class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+            <div>
+                <label for="years" class="block text-gray-700">Investment Duration (Years):</label>
+                <input type="number" id="years" placeholder="Enter years"
+                    class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+            <div>
+                <label for="stepUpPercentage" class="block text-gray-700">Step-Up Percentage (%):</label>
+                <input type="number" id="stepUpPercentage" placeholder="Enter step-up percentage"
+                    class="w-full p-2 border border-gray-300 rounded">
+            </div>
+            <div>
+                <label for="stepUpFrequency" class="block text-gray-700">Step-Up Frequency:</label>
+                <select id="stepUpFrequency" class="w-full p-2 border border-gray-300 rounded">
+                    <option value="none">None</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="halfYearly">Half-Yearly</option>
+                    <option value="annually">Annually</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculateSIP()"
+                class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Calculate</button>
+            <p id="errorMessage" class="text-red-500 text-center mt-2 hidden">Please enter valid values.</p>
+        </form>
+        <div class="mt-6 text-center">
+            <h2 class="text-lg font-semibold">Final Amount: ₹<span id="result">0.00</span></h2>
+        </div>
+        <div class="mt-5">
+            <canvas id="investmentChart" class="hidden"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

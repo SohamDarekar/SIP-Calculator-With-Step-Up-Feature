@@ -33,7 +33,7 @@ Technologies Used
 Authors
 
 - Soham Darekar ([SohamDarekar](https://github.com/SohamDarekar))
-- Rishi ([rishidevelops](https://github.com/rishidevelops))
+- Rishi Desai ([rishidevelops](https://github.com/rishidevelops))
 
 License
 

@@ -2,7 +2,8 @@
 ```markdown
 SIP Calculator with Step-Up Feature
 
-This project is a SIP (Systematic Investment Plan) Calculator that allows users to calculate the future value of their investments. The calculator supports step-up investments, where the monthly contribution can be increased periodically (quarterly, half-yearly, or annually).
+This project is a SIP (Systematic Investment Plan) Calculator that allows users to calculate the future value of their investments.
+The calculator supports step-up investments, where the monthly contribution can be increased periodically (quarterly, half-yearly, or annually).
 
 Features
 

@@ -13,7 +13,7 @@ Features
 
 Demo
 
-You can try out the live version of the SIP Calculator [here](https://sohamdarekar.github.io/SIP-Calculator-With-Step-Up-Feature/).
+You can try out the live version of the SIP Calculator (https://sohamdarekar.github.io/SIP-Calculator-With-Step-Up-Feature/).
 
 Usage
 

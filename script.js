@@ -40,7 +40,8 @@ function calculateSIP() {
     const totalReturns = totalAmount - totalInvested;
 
     // Display the final amount
-    document.getElementById('result').textContent = totalAmount.toFixed(2);
+    let result = document.getElementById('result')
+    result.textContent = parseFloat(totalAmount.toFixed(2)).toLocaleString("hi-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
     // Show the chart container and update the chart
     document.getElementById('investmentChart').classList.remove('hidden');

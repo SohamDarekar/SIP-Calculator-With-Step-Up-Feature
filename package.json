@@ -2,7 +2,7 @@
   "name": "sip-calculator-react",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/SIP-Calculator-With-Step-Up-Feature",
+  "homepage": "https://sohamdarekar.github.io/SIP-Calculator-With-Step-Up-Feature",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
